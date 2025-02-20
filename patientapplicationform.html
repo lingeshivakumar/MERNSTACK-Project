@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <hr>
+    <h1 style="text-align: center;"><strong>|Dental Hospital|</strong></h1>
+    <h3 style="text-align: right;">Contact: 8015283299<br>Email: lingesh221204@gmail.com</h3>
+    <hr>
+    <br>
+
+    <h2><strong> Patient Application Form </strong> </h2>
+
+    <fieldset>
+
+        <legend><strong> Fill out this form </strong></legend>
+        <br>
+
+        <form action="/submit" method="POST">
+
+            <label for="name"> <strong> Enter your name </strong> </label><br><br>
+            <input type="text" id="name" placeholder="Name" required>
+            <br><br><br>
+
+            <label> <strong> Gender: </strong> </label><br><br>
+            <input type = "radio" name = "gender" value = "male"> Male <br><br>
+            <input type = "radio" name = "gender" value = "female"> Female
+            <br><br><br>
+
+            <label for="text"> <strong> Enter your age </strong> </label><br><br>
+            <input type="number" id="age" placeholder="Age" min = "1" max = "150" required>
+            <br><br><br>
+
+            <label for = "email"> <strong> Enter Email ID </strong> </label><br><br>
+            <input type = "email" id = "email" placeholder = "Enter Email ID">
+            <br><br><br>
+
+            <label for = "date"> <strong> Enter your preferred appointment date </strong> </label><br><br>
+            <input type = "date" id = "date" name = "date" required>
+            <br><br><br>
+
+            <label for="date"> <strong> State your dental issue </strong> </label><br><br>
+            <input type="text" id="issue" placeholder="Dental issue" required>
+            <br><br><br>
+            
+            <label for = "file"> <strong> Upload identity proof </strong> </label><br><br>
+            <input type = "file" id = "file" name = "file" accept=".jpg, .jpeg, .png, .pdf" required>
+            <br><br><br>
+
+            <label> <strong> Have you visited our hospital before? </strong> </label><br><br>
+            <input type = "radio" name = "ans" value = "yes"> Yes <br><br>
+            <input type = "radio" name = "ans" value = "no"> No
+            <br><br><br>
+
+            <label for = "select"> <strong> Select your preferred doctor </strong></label><br><br>
+            <select>
+                <option value = "">--Select a Doctor-- </option>
+                <option value = "Dr A">Dr A </option>
+                <option value = "Dr B">Dr B </option>
+                <option value = "Dr C">Dr C </option>
+                <option value = "Dr D">Dr D </option>
+                <option value = "Dr E">Dr E </option>
+            </select>
+            <br><br><br>
+
+            <hr><br>
+            <button type = "submit"> Submit </button>
+            <button type = "reset"> Reset </button>
+            <br><br>
+
+         </form>    
+    
+    </fieldset>
+
+</body>
+</html>
