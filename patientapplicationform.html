@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Dentistry - Book an appointment </title>
 </head>
 <body>
 
     <hr>
-    <h1 style="text-align: center;"><strong>|Dental Hospital|</strong></h1>
-    <h3 style="text-align: right;">Contact: 8015283299<br>Email: lingesh221204@gmail.com</h3>
+    <h1 style="text-align: center; text-transform: uppercase;"><strong> Dentistry </strong></h1>
+    <div style = "display: flex; justify-content: space-between; padding: 0 20px;">
+        <p style = "margin: 0;"><strong> Phone:</strong> +91 8015283299 </p>
+        <p style = "margin: 0;"><strong> Email:</strong> lingesh21204@email.com </p>
+    </div>
     <hr>
     <br>
 
@@ -35,6 +38,10 @@
             <input type="number" id="age" placeholder="Age" min = "1" max = "150" required>
             <br><br><br>
 
+            <label for="number"> <strong> Enter your phone number</strong> </label><br><br>
+            <input type="number" id="phoneno" placeholder="Phone number" required>
+            <br><br><br>
+
             <label for = "email"> <strong> Enter Email ID </strong> </label><br><br>
             <input type = "email" id = "email" placeholder = "Enter Email ID">
             <br><br><br>
@@ -58,7 +65,7 @@
 
             <label for = "select"> <strong> Select your preferred doctor </strong></label><br><br>
             <select>
-                <option value = "">--Select a Doctor-- </option>
+                <option value = ""> Select a Doctor </option>
                 <option value = "Dr A">Dr A </option>
                 <option value = "Dr B">Dr B </option>
                 <option value = "Dr C">Dr C </option>
