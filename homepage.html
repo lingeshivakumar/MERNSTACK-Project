@@ -9,50 +9,95 @@
 <body style="font-family: 'Inter', sans-serif; background-color: #f9f9f9; margin: 0; padding: 0;">
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 1000;">
-
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">BrightSmile</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="patientapplicationform.html">Book an Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="patientapplicationform.html">Book an appointment</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="login.html">Login / Sign Up</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div style="text-align: center; padding: 100px 20px; position: relative; color: black; background: linear-gradient(to bottom, #ffffff, #f2f2f2); overflow: hidden;">
-        <div style="content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('background-placeholder.jpg') center/cover no-repeat; opacity: 0.3; z-index: -1;"></div>
-        <h1 style="font-size: 50px; font-weight: bold; margin-bottom: 20px; backdrop-filter: blur(5px);">Stay Smiling</h1>
-        <p style="font-size: 20px; color: #333; margin-bottom: 30px; backdrop-filter: blur(5px);">Advanced dental care for a brighter smile.</p>
-        <button style="font-size: 16px; font-weight: 500; padding: 12px 24px; border: none; border-radius: 12px; background: linear-gradient(to bottom, #007AFF, #005EC6); color: white; cursor: pointer; transition: transform 0.2s ease-in-out;" onclick="window.location.href='patientapplicationform.html'">Book an Appointment</button>
+    <div style="text-align: center; padding: 100px 20px; position: relative; color: black; background: url('banner.png'); background-size: cover; background-position: center; background-blend-mode: overlay; 
+        overflow: hidden;">
+        <h1 style="font-size: 50px; font-weight: bold; margin-bottom: 20px; text-align: center;"> Stay Smiling </h1>
+        <p style="font-size: 20px; color: #333; margin-bottom: 30px; text-align: center;"> Advanced dental care for a brighter smile </p>
+        <button style="font-size: 16px; font-weight: 500; padding: 12px 24px; border: none; border-radius: 12px; background: linear-gradient(to bottom, #007AFF, #005EC6); color: white; 
+        cursor: pointer" onclick="window.location.href='patientapplicationform.html'"> Book an Appointment </button>
+        <button style="font-size: 16px; font-weight: 500; padding: 12px 24px; border: none; border-radius: 12px; background: linear-gradient(to bottom, #007AFF, #005EC6); color: white; 
+        cursor: pointer" onclick="window.location.href='services.html'"> Services we provide </button>
+    </div>
+
+    <!-- About Us Section -->
+    <div style="text-align: center; padding: 80px 20px; background-color: white;">
+        <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 20px;">About Us</h2>
+        <p style="font-size: 18px; color: #555; max-width: 800px; margin: 0 auto;">
+            At BrightSmile, we provide top-quality dental care with a focus on patient comfort and satisfaction. 
+            Our team of skilled professionals use state-of-the-art technology and the latest techniques to ensure the best results. 
+            Whether you need a routine checkup, additional services, or specialized treatment, we are here to help you achieve a healthier, 
+            brighter smile. Your dental health is our priority!
+        </p>
     </div>
 
     <div style="text-align: center; padding: 60px 20px;">
         <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; transform: translateY(-10px);">
             <div style="max-width: 350px; text-align: center; padding: 20px; background-color: white; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out;">
-                <img src="dtools.jpg" alt="Feature Image 1" style="width: 100%; height: auto; border-radius: 10px;">
-                <h3>Cutting-edge Dental Care</h3>
-                <p>Modern equipment and professional expertise.</p>
+                <img src="dtools.jpg" alt="image1" style="width: 100%; height: auto; border-radius: 10px;"><br><br>
+                <h3><strong>Cutting-edge Dental Care</strong></h3>
+                <p>Modern equipment and professional expertise</p>
             </div>
             <div style="max-width: 350px; text-align: center; padding: 20px; background-color: white; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out;">
-                <img src="pro.avif" alt="Feature Image 2" style="width: 100%; height: auto; border-radius: 10px;">
-                <h3>Comfort & Safety</h3>
-                <p>A relaxing experience with top-notch hygiene standards.</p>
+                <img src="pro.avif" alt="image2" style="width: 100%; height: auto; border-radius: 10px;"><br><br>
+                <h3><strong>Comfort & Safety</strong></h3>
+                <p>A relaxing experience with top-notch hygiene standards</p>
             </div>
             <div style="max-width: 350px; text-align: center; padding: 20px; background-color: white; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out;">
-                <img src="kid.jpg" alt="Feature Image 3" style="width: 100%; height: auto; border-radius: 10px;">
-                <h3>Personalized Treatment</h3>
-                <p>Tailored dental solutions for all ages.</p>
+                <img src="kid.jpg" alt="image3" style="width: 100%; height: auto; border-radius: 10px;"><br><br>
+                <h3><strong>Personalized Treatment</strong></h3>
+                <p>Tailored dental solutions for all ages</p>
             </div>
         </div>
     </div>
 
-    <div style="background-color: #333; color: white; text-align: center; padding: 15px 0; margin-top: 50px;">
+    <section id="testimonials">
+    <div style="text-align: center; padding: 80px 20px;">
+        <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 40px;">What Our Patients Say</h2>
+        
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+            
+            <div style="max-width: 300px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); text-align: center; transition: transform 0.2s ease-in-out;">
+                <p style="font-size: 18px; color: #555;">"Absolutely amazing experience! The staff is incredibly kind and professional."</p>
+                <h4 style="font-size: 16px; font-weight: bold; margin-top: 15px; color: #007AFF;">- Darren Watkins</h4>
+            </div>
+            
+            <div style="max-width: 300px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); text-align: center; transition: transform 0.2s ease-in-out;">
+                <p style="font-size: 18px; color: #555;">"The best dental service I've ever received. Highly recommended!"</p>
+                <h4 style="font-size: 16px; font-weight: bold; margin-top: 15px; color: #007AFF;">- Jesse Pinkman</h4>
+            </div>
+            
+            <div style="max-width: 300px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); text-align: center; transition: transform 0.2s ease-in-out;">
+                <p style="font-size: 18px; color: #555;">"Got my teeth cleaned here. Flawless work. Just perfection."</p>
+                <h4 style="font-size: 16px; font-weight: bold; margin-top: 15px; color: #007AFF;">- Patrick Bateman</h4>
+            </div>
+            
+            <div style="max-width: 300px; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); text-align: center; transition: transform 0.2s ease-in-out;">
+                <p style="font-size: 18px; color: #555;">"Exceptional care and attention to detail. My teeth look way better now."</p>
+                <h4 style="font-size: 16px; font-weight: bold; margin-top: 15px; color: #007AFF;">- Walter White</h4>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+
+    <div style="background-color: #333; color: white; text-align: center; padding: 15px 0;">
         <p>&copy; 2025 BrightSmile. All Rights Reserved. - Lingesh Shivakumar</p>
     </div>
 
