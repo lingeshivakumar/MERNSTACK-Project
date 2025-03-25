@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightSmile - FAQs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'SF Pro Display', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: #1d1d1f;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .nav-link {
+            font-size: 15px;
+            transition: 0.3s;
+            color: black;
+        }
+
+        /* Banner */
+        .banner {
+            text-align: center;
+            padding: 140px 20px;
+            background: url('aboutusbanner') center/cover no-repeat;
+            color: white;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+            transition: 0.4s ease-in-out;
+        }
+
+        .banner:hover {
+            transform: scale(1.05);
+        }
+
+        .banner h1 {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .banner h3 {
+            font-size: 30px;
+            font-weight: lighter;
+            max-width: 600px;
+        }
+
+        /* FAQ Section */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            background-color: black;
+
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+            transition: 0.3s ease-in-out;
+        }
+
+        .faq-item:hover {
+            transform: scale(1.02);
+        }
+
+        .faq-question {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid px-100 mx-4">  
+            <a class="navbar-brand ms-3" href="homepage.html" style="color: black;">BrightSmile</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="patientapplicationform.html">Book an Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login / Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="banner">
+        <h1>Frequently Asked Questions</h1>
+        <h3>Find answers to common questions about our dental services.</h3>
+    </div>
+
+    <div class="container">
+        <div class="faq-item">
+            <p class="faq-question">1. How do I book an appointment?</p>
+            <p class="faq-answer">You can book an appointment online through our website or call our front desk.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">2. What dental services do you offer?</p>
+            <p class="faq-answer">We provide general dentistry, orthodontics, teeth whitening, root canals, and more.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">3. Do you accept insurance?</p>
+            <p class="faq-answer">Yes, we accept most dental insurance plans. Please check with our reception for details.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">4. How much do treatments cost?</p>
+            <p class="faq-answer">Prices vary depending on the treatment. Contact us for a consultation.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">5. What should I do in case of a dental emergency?</p>
+            <p class="faq-answer">Call our emergency number immediately or visit our clinic as soon as possible.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">6. Is teeth whitening safe?</p>
+            <p class="faq-answer">Yes, professional teeth whitening is safe and effective when done by a dentist.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">7. How often should I visit the dentist?</p>
+            <p class="faq-answer">We recommend a check-up every six months for optimal dental health.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">8. What age should my child have their first dental visit?</p>
+            <p class="faq-answer">Your child should visit the dentist by their first birthday or when their first tooth appears.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 BrightSmile. All Rights Reserved. - Lingesh Shivakumar</p>
+    </div>
+
+</body>
+</html>
