@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightSmile - Careers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'SF Pro Display', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: #1d1d1f;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .nav-link {
+            font-size: 15px;
+            transition: 0.3s;
+            color: black;
+        }
+
+
+
+        /* Banner */
+        .banner {
+            text-align: center;
+            padding: 140px 20px;
+            background: url('aboutusbanner') center/cover no-repeat;
+            color: white;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+            transition: 0.4s ease-in-out;
+        }
+
+        .banner:hover{
+            transform: scale(1.05);
+        }
+
+        .banner h1 {
+            font-size: 80px;
+            font-weight: bold;;
+        }
+
+        .banner h3 {
+            font-size: 30px;
+            font-weight: lighter;
+            max-width: 600px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .career-box {
+            background-color: white;
+            color: black;
+            padding: 30px;
+            margin: 50px 20px;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: 0.3s ease-in-out;
+        }
+
+        .career-box:hover{
+            transform: scale(1.06);
+        }
+
+        .career-box h3 {
+            margin: 0;
+            color: black;
+        }
+        .career-box p {
+            color: black;
+        }
+        .apply-btn {
+            background-color: #0071e3;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s ease-in-out;
+        }
+        .apply-btn:hover {
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            transform: scale(1.15);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid px-100 mx-4">  <!-- Keep this as "container" to control width -->
+            <a class="navbar-brand ms-3" href="homepage.html" style="color: black;">BrightSmile</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav"> 
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="patientapplicationform.html">Book an Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login / Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="banner">
+        <h1>Careers at BrightSmile</h1>
+        <h3>Join a team that’s shaping the future of dental healthcare.</h3>
+    </div>
+
+    <br>
+
+    <div class="container" style="text-align: center;">
+        <div class="career-box">
+            <h3>Dentist</h3>
+            <p>Responsible for diagnosing and treating dental issues in patients.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+
+        <div class="career-box">
+            <h3>Dental Assistant</h3>
+            <p>Assist dentists during procedures and manage patient care.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+
+        <div class="career-box">
+            <h3>Dental Hygienist</h3>
+            <p>Perform teeth cleaning and educate patients on oral health.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+
+        <div class="career-box">
+            <h3>Orthodontist</h3>
+            <p>Specializes in correcting teeth and jaw alignment.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+
+        <div class="career-box">
+            <h3>Periodontist</h3>
+            <p>Focuses on gum diseases and dental implants.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+
+        <div class="career-box">
+            <h3>Endodontist</h3>
+            <p>Expert in root canal treatments and pulp-related issues.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+
+        <div class="career-box">
+            <h3>Pediatric Dentist</h3>
+            <p>Specializes in treating dental issues in children.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+
+        <div class="career-box">
+            <h3>Prosthodontist</h3>
+            <p>Expert in dental prosthetics like crowns and dentures.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+
+        <div class="career-box">
+            <h3>Dental Receptionist</h3>
+            <p>Handles patient appointments and front-desk operations.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+
+        <div class="career-box">
+            <h3>Lab Technician</h3>
+            <p>Prepares dental prosthetics and assists with lab procedures.</p>
+            <button class="apply-btn">Apply Now</button>
+        </div>
+    </div><br><br><br>
+
+    <div class="container" style="text-align: center;">
+        <div class="career-box" style="background-color: white; color: black; transition: 0.3s ease-in-out;">
+            <h2>Contact Us</h2>
+            <p style="font-size: 20px;">Have any questions? Feel free to reach out to us.</p>
+            <p style="font-size: 18px; color: #0071e3;">📧 Email: careers@brightsmile.com</p>
+            <p style="font-size: 18px; color: #0071e3;">📞 Phone: 044 5342 6942</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 BrightSmile. All Rights Reserved. - Lingesh Shivakumar</p>
+    </div>
+
+</body>
+</html>
