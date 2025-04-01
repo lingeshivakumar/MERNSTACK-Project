@@ -28,7 +28,6 @@
             transition: background-color 0.3s ease-in-out;
         }
 
-
         .navbar-brand {
             font-weight: bold;
             font-size: 22px;
@@ -40,9 +39,6 @@
             color: black;
         }
 
-
-
-        /* Banner */
         .banner {
             text-align: center;
             padding: 140px 20px;
@@ -57,13 +53,13 @@
             transition: 0.4s ease-in-out;
         }
 
-        .banner:hover{
+        .banner:hover {
             transform: scale(1.05);
         }
 
         .banner h1 {
             font-size: 80px;
-            font-weight: bold;;
+            font-weight: bold;
         }
 
         .banner h3 {
@@ -71,34 +67,35 @@
             font-weight: lighter;
             max-width: 600px;
         }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+
+
+        .container-careers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
         }
 
+
         .career-box {
+            flex: 1 1 calc(33.33% - 40px);
             background-color: white;
             color: black;
             padding: 30px;
-            margin: 50px 20px;
             border-radius: 40px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: 0.3s ease-in-out;
+            min-height: 200px;
         }
 
-        .career-box:hover{
+        .career-box:hover {
             transform: scale(1.06);
         }
 
-        .career-box h3 {
-            margin: 0;
-            color: black;
-        }
-        .career-box p {
-            color: black;
-        }
         .apply-btn {
             background-color: #0071e3;
             color: white;
@@ -110,6 +107,7 @@
             margin-top: 10px;
             transition: 0.3s ease-in-out;
         }
+
         .apply-btn:hover {
             background-color: white;
             border: 1px solid black;
@@ -117,7 +115,7 @@
             transform: scale(1.15);
         }
 
-        /* Footer */
+
         .footer {
             background-color: #333;
             color: white;
@@ -131,7 +129,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid px-100 mx-4">  <!-- Keep this as "container" to control width -->
+        <div class="container-fluid px-100 mx-4">
             <a class="navbar-brand ms-3" href="homepage.html" style="color: black;">BrightSmile</a> 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -149,15 +147,12 @@
         </div>
     </nav>
     
-
     <div class="banner">
         <h1>Careers at BrightSmile</h1>
         <h3>Join a team that’s shaping the future of dental healthcare.</h3>
     </div>
 
-    <br>
-
-    <div class="container" style="text-align: center;">
+    <div class="container-careers">
         <div class="career-box">
             <h3>Dentist</h3>
             <p>Responsible for diagnosing and treating dental issues in patients.</p>
@@ -211,24 +206,8 @@
             <p>Handles patient appointments and front-desk operations.</p>
             <button class="apply-btn">Apply Now</button>
         </div>
-
-        <div class="career-box">
-            <h3>Lab Technician</h3>
-            <p>Prepares dental prosthetics and assists with lab procedures.</p>
-            <button class="apply-btn">Apply Now</button>
-        </div>
-    </div><br><br><br>
-
-    <div class="container" style="text-align: center;">
-        <div class="career-box" style="background-color: white; color: black; transition: 0.3s ease-in-out;">
-            <h2>Contact Us</h2>
-            <p style="font-size: 20px;">Have any questions? Feel free to reach out to us.</p>
-            <p style="font-size: 18px; color: #0071e3;">📧 Email: careers@brightsmile.com</p>
-            <p style="font-size: 18px; color: #0071e3;">📞 Phone: 044 5342 6942</p>
-        </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <p>&copy; 2025 BrightSmile. All Rights Reserved. - Lingesh Shivakumar</p>
     </div>
