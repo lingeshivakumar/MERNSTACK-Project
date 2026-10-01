@@ -4,7 +4,7 @@ A full-stack dental hospital web application built with the **MERN stack** (Mong
 
 ---
 
-## 🖥️ Tech Stack
+## Tech Stack
 
 | Layer       | Technology                              |
 |-------------|----------------------------------------|
@@ -15,7 +15,7 @@ A full-stack dental hospital web application built with the **MERN stack** (Mong
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 MERNSTACK-Project/
@@ -60,7 +60,7 @@ MERNSTACK-Project/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -110,7 +110,7 @@ The app will run at **http://localhost:5173**
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 The app uses **JWT-based authentication** with the following flow:
 
@@ -130,7 +130,7 @@ The app uses **JWT-based authentication** with the following flow:
 
 ---
 
-## 📄 Pages
+## Pages
 
 | Route              | Page                    | Description                          |
 |--------------------|-------------------------|--------------------------------------|
@@ -147,23 +147,14 @@ The app uses **JWT-based authentication** with the following flow:
 
 ---
 
-## ✨ Features
+## Features
 
-- ⚡ **Single Page Application** — React Router for instant navigation
-- 🔒 **Secure Authentication** — bcrypt password hashing + JWT tokens
-- 📱 **Responsive Design** — Mobile-friendly with hamburger menu
-- 🎨 **Custom CSS Design System** — CSS custom properties, transitions, and hover animations
-- 👤 **Auth-Aware Navbar** — Shows user avatar when logged in, login link when not
-- 📋 **10 Fully Converted Pages** — All original HTML pages ported to React components
-
----
-
-## 👨‍💻 Author
-
-**Lingesh Shivakumar**
+- **Single Page Application** — React Router for instant navigation
+- **Secure Authentication** — bcrypt password hashing + JWT tokens
+- **Responsive Design** — Mobile-friendly with hamburger menu
+- **Custom CSS Design System** — CSS custom properties, transitions, and hover animations
+- **Auth-Aware Navbar** — Shows user avatar when logged in, login link when not
+- **10 Fully Converted Pages** — All original HTML pages ported to React components
 
 ---
 
-## 📝 License
-
-© 2025 BrightSmile. All Rights Reserved.
