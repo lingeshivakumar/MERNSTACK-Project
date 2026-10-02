@@ -1,21 +1,63 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { useAuth } from '../context/AuthContext';
+
+const API_URL = 'http://localhost:5000/api/appointments';
 
 function AppointmentPage() {
+  const { user } = useAuth();
   const [formData, setFormData] = useState({
     name: '', gender: '', age: '', phoneno: '', altphoneno: '',
     email: '', date: '', issue: '', service: '', visit: '', doctor: '', updates: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
+    if (submitting) return;
+
+    if (!user) {
+      setError('You must be logged in to book an appointment.');
+      return;
+    }
+
+    setSubmitting(true);
+    setError('');
+
+    try {
+      await axios.post(API_URL, {
+        patientName: formData.name,
+        gender: formData.gender || undefined,
+        age: Number(formData.age),
+        phoneNumber: formData.phoneno,
+        altPhoneNumber: formData.altphoneno || undefined,
+        email: formData.email,
+        appointmentDate: formData.date,
+        issue: formData.issue || undefined,
+        service: formData.service || undefined,
+        visitedBefore: formData.visit || undefined,
+        preferredDoctor: formData.doctor || undefined,
+        receiveUpdates: formData.updates || undefined,
+      });
+
+      setSubmitted(true);
+      setFormData({
+        name: '', gender: '', age: '', phoneno: '', altphoneno: '',
+        email: '', date: '', issue: '', service: '', visit: '', doctor: '', updates: '',
+      });
+    } catch (err) {
+      const msg = err.response?.data?.message || 'Something went wrong. Please try again.';
+      setError(msg);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleReset = () => {
@@ -24,6 +66,7 @@ function AppointmentPage() {
       email: '', date: '', issue: '', service: '', visit: '', doctor: '', updates: '',
     });
     setSubmitted(false);
+    setError('');
   };
 
   return (
@@ -39,9 +82,16 @@ function AppointmentPage() {
 
         <h2 style={{ marginBottom: '20px', fontWeight: '700' }}>Patient Application Form</h2>
 
-        {submitted && <div className="auth-success">Your appointment request has been submitted successfully!</div>}
+        {!user && (
+          <div className="auth-error" style={{ marginBottom: '16px' }}>
+            Please <Link to="/login">log in</Link> to book an appointment.
+          </div>
+        )}
 
-        <fieldset className="form-fieldset">
+        {submitted && <div className="auth-success">Your appointment request has been submitted successfully!</div>}
+        {error && <div className="auth-error">{error}</div>}
+
+        <fieldset className="form-fieldset" disabled={!user || submitting}>
           <legend><strong>Fill out this form</strong></legend>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -132,7 +182,9 @@ function AppointmentPage() {
             </div>
 
             <div className="form-actions">
-              <button type="submit" className="btn-primary btn-sm">Submit</button>
+              <button type="submit" className="btn-primary btn-sm" disabled={submitting}>
+                {submitting ? 'Submitting...' : 'Submit'}
+              </button>
               <button type="button" className="btn-secondary" onClick={handleReset}>Reset</button>
             </div>
           </form>
